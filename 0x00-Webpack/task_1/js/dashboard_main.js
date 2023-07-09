@@ -10,8 +10,8 @@ $('body').append('<p>Copyright - Holberton School</p>');
 let conunt = 0;
 
 function updateCounter() {
-  count++;
-  $("#count").html(`${count} clicks on the button`);
-};
+  counter++;
+  $('#count').html(`${counter} clicks on the button`);
+}
 
-$('button').on('click', _.debounce(updateCounter, 500));
+$("button").on("click", _.debounce(updateCounter, 500));
