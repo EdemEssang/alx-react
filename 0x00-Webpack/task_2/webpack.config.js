@@ -15,12 +15,12 @@ module.exports = {
     maxAssetSize: 512000,
   },
 
-//   resolve: {
-//     extensions: ['', '.js', '.jsx', '.css'],
-//     modulesDirectories: [
-//       'node_modules'
-//     ]        
-// },
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.css'],
+    modulesDirectories: [
+      'node_modules'
+    ]        
+},
 
 
   module: {
