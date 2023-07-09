@@ -34,7 +34,7 @@ module.exports = {
         use: [
           "file-loader",
           {
-            // loader: "image-webpack-loader", // this did not work
+            loader: "image-webpack-loader", 
             loader: 'file-loader',
             options: {
               bypassOnDebug: true,
