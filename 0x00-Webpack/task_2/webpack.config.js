@@ -14,6 +14,15 @@ module.exports = {
     maxEntrypointSize: 512000,
     maxAssetSize: 512000,
   },
+
+//   resolve: {
+//     extensions: ['', '.js', '.jsx', '.css'],
+//     modulesDirectories: [
+//       'node_modules'
+//     ]        
+// },
+
+
   module: {
     rules: [
       {
@@ -25,7 +34,8 @@ module.exports = {
         use: [
           "file-loader",
           {
-            loader: "image-webpack-loader",
+            // loader: "image-webpack-loader", // this did not work
+            loader: 'file-loader',
             options: {
               bypassOnDebug: true,
               disable: true,
